@@ -5,7 +5,7 @@ A curated list of Blockchain and bitcoin.
 
 Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 
-- [Awesome Python](#awesome-python)
+- [practical blockchain](#practical blockchain)
     - [Admin Panels](#admin-panels)
     - [Algorithms and Design Patterns](#algorithms-and-design-patterns)
     - [Anti-spam](#anti-spam)

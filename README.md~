@@ -34,7 +34,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 
 - - -
 ## Get start
-* understand what is blockchain. *
+*understand what is blockchain.*
 * [blockchain demo](https://www.youtube.com/watch?v=_160oMzblY8) -Blockchain 101 - A Visual Demo
 * [how to learn](https://news.ycombinator.com/item?id=12571287) -The advices from hacker news
 

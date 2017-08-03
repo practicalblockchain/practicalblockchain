@@ -35,6 +35,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 - - -
 ## Get start
 *understand what is blockchain.*
+* [Why should u care them](https://hackernoon.com/bitcoin-ethereum-blockchain-tokens-icos-why-should-anyone-care-890b868cec06) -Get start about these concepts
 * [blockchain demo](https://www.youtube.com/watch?v=_160oMzblY8) -Blockchain 101 - A Visual Demo
 * [how to learn](https://news.ycombinator.com/item?id=12571287) -The advices from hacker news
 

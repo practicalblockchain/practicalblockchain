@@ -1,0 +1,1552 @@
+
+1
+00:00:00,010 --> 00:00:05,100
+this is a blockchain demo we're going to
+
+2
+00:00:05,100 --> 00:00:07,410
+do this in a very visual way though I'm
+
+3
+00:00:07,410 --> 00:00:09,389
+going to make it very easy to understand
+
+4
+00:00:09,389 --> 00:00:12,540
+by stepping through the key pieces of
+
+5
+00:00:12,540 --> 00:00:15,660
+what a blockchain is in a visual way but
+
+6
+00:00:15,660 --> 00:00:17,190
+before we get started we need to take a
+
+7
+00:00:17,190 --> 00:00:19,970
+look at this thing that we call a
+
+8
+00:00:19,970 --> 00:00:24,390
+sha-256 hash okay and a hash this is
+
+9
+00:00:24,390 --> 00:00:25,769
+this is one of them right here
+
+10
+00:00:25,769 --> 00:00:27,900
+hash looks like a bunch of random
+
+11
+00:00:27,900 --> 00:00:30,840
+numbers and essentially what it is it's
+
+12
+00:00:30,840 --> 00:00:33,750
+a fingerprint of some digital data and
+
+13
+00:00:33,750 --> 00:00:35,579
+it just so happens it's the fingerprint
+
+14
+00:00:35,579 --> 00:00:38,219
+of whatever I type in this box so if I
+
+15
+00:00:38,219 --> 00:00:42,120
+type my name on theirs into this box you
+
+16
+00:00:42,120 --> 00:00:45,000
+see that the hash has changed matter of
+
+17
+00:00:45,000 --> 00:00:47,250
+fact it changed every time I typed a
+
+18
+00:00:47,250 --> 00:00:49,860
+letter right so I'm going to go back to
+
+19
+00:00:49,860 --> 00:00:53,340
+so it says onder's okay so this is a the
+
+20
+00:00:53,340 --> 00:00:55,739
+hash of the name onder's all lowercase
+
+21
+00:00:55,739 --> 00:00:59,340
+it starts with one 9ea right okay so if
+
+22
+00:00:59,340 --> 00:01:01,890
+I delete that and I go again type
+
+23
+00:01:01,890 --> 00:01:04,860
+onder's again you can see it starts with
+
+24
+00:01:04,860 --> 00:01:08,220
+one 9ei the same exact hash in that
+
+25
+00:01:08,220 --> 00:01:10,200
+sense it's a digital fingerprint of this
+
+26
+00:01:10,200 --> 00:01:13,770
+data whatever data is here every time
+
+27
+00:01:13,770 --> 00:01:15,869
+you type exactly the same data you get
+
+28
+00:01:15,869 --> 00:01:18,210
+exactly the same hash and I can type
+
+29
+00:01:18,210 --> 00:01:20,189
+anything I want so you can have nothing
+
+30
+00:01:20,189 --> 00:01:23,580
+like this you know III b0 that's that's
+
+31
+00:01:23,580 --> 00:01:26,040
+the hash of nothing or you could type
+
+32
+00:01:26,040 --> 00:01:28,590
+tons and tons of stuff a matter of fact
+
+33
+00:01:28,590 --> 00:01:29,970
+you could put like the Library of
+
+34
+00:01:29,970 --> 00:01:32,310
+Congress in here and you would get a
+
+35
+00:01:32,310 --> 00:01:34,770
+hash and the interesting thing about it
+
+36
+00:01:34,770 --> 00:01:37,860
+is regardless of there if there's a tiny
+
+37
+00:01:37,860 --> 00:01:39,900
+amount of information no information or
+
+38
+00:01:39,900 --> 00:01:41,820
+the entire Library of Congress you're
+
+39
+00:01:41,820 --> 00:01:44,189
+always going to get a hash that is this
+
+40
+00:01:44,189 --> 00:01:46,140
+long this many characters are you're not
+
+41
+00:01:46,140 --> 00:01:49,110
+going to be able to pre guess what this
+
+42
+00:01:49,110 --> 00:01:51,540
+is you kind of have to put the Library
+
+43
+00:01:51,540 --> 00:01:53,610
+of Congress in here to figure out what
+
+44
+00:01:53,610 --> 00:01:57,329
+the hash is but you you always get
+
+45
+00:01:57,329 --> 00:02:00,840
+exactly the same hash regardless of how
+
+46
+00:02:00,840 --> 00:02:02,700
+many times you put exactly the same
+
+47
+00:02:02,700 --> 00:02:06,240
+information in so what I'm going to do
+
+48
+00:02:06,240 --> 00:02:12,360
+is extend this idea of a hash into
+
+49
+00:02:12,360 --> 00:02:13,860
+something that we're going to call a
+
+50
+00:02:13,860 --> 00:02:16,170
+block alright so let's take a look at a
+
+51
+00:02:16,170 --> 00:02:20,370
+block so this is a block and it's
+
+52
+00:02:20,370 --> 00:02:22,620
+exactly like the hash it's just that
+
+53
+00:02:22,620 --> 00:02:25,260
+that data section I've broken out now
+
+54
+00:02:25,260 --> 00:02:27,510
+into three sections one called block
+
+55
+00:02:27,510 --> 00:02:29,280
+this is just some kind of a number this
+
+56
+00:02:29,280 --> 00:02:32,280
+is block number one on nonce which is
+
+57
+00:02:32,280 --> 00:02:34,410
+just yet another number we'll go into
+
+58
+00:02:34,410 --> 00:02:36,030
+what that is in a second and then just
+
+59
+00:02:36,030 --> 00:02:37,860
+some more data just very similarly to
+
+60
+00:02:37,860 --> 00:02:40,129
+the way that we had it before
+
+61
+00:02:40,129 --> 00:02:44,340
+however the hash of this which includes
+
+62
+00:02:44,340 --> 00:02:47,250
+all of this information up here is down
+
+63
+00:02:47,250 --> 00:02:50,069
+here and it begins with four zeros you
+
+64
+00:02:50,069 --> 00:02:53,250
+see that it's a relatively unusual hash
+
+65
+00:02:53,250 --> 00:02:55,410
+you know most of them are not really
+
+66
+00:02:55,410 --> 00:02:57,239
+going to start with four zeros like that
+
+67
+00:02:57,239 --> 00:02:59,909
+but this one happens to and because it
+
+68
+00:02:59,909 --> 00:03:02,790
+does totally arbitrarily I'm going to
+
+69
+00:03:02,790 --> 00:03:05,970
+say that this block is signed okay so
+
+70
+00:03:05,970 --> 00:03:09,090
+what would happen if I were to change
+
+71
+00:03:09,090 --> 00:03:11,670
+any one piece of this information let's
+
+72
+00:03:11,670 --> 00:03:13,040
+say if I were to type something here
+
+73
+00:03:13,040 --> 00:03:15,920
+right the hash is going to change and
+
+74
+00:03:15,920 --> 00:03:18,870
+what's a chance of if I type letters
+
+75
+00:03:18,870 --> 00:03:20,550
+this hash is going to start with four
+
+76
+00:03:20,550 --> 00:03:23,519
+zeros pretty low it's probably not right
+
+77
+00:03:23,519 --> 00:03:26,099
+so let's see what happens when I do that
+
+78
+00:03:26,099 --> 00:03:29,760
+I'm just going to say hi oh look at that
+
+79
+00:03:29,760 --> 00:03:32,310
+write this hash does not start with four
+
+80
+00:03:32,310 --> 00:03:35,129
+zeros and so the big background here is
+
+81
+00:03:35,129 --> 00:03:37,799
+turned red so now you know that this
+
+82
+00:03:37,799 --> 00:03:41,280
+this block with this information in it
+
+83
+00:03:41,280 --> 00:03:45,330
+is not a valid or assigned block okay
+
+84
+00:03:45,330 --> 00:03:47,430
+and that's where this nonce comes in
+
+85
+00:03:47,430 --> 00:03:49,680
+this nonce is just a number that you can
+
+86
+00:03:49,680 --> 00:03:54,060
+set to try to find a number that fits so
+
+87
+00:03:54,060 --> 00:03:56,430
+that this hash starts with four zeros
+
+88
+00:03:56,430 --> 00:03:58,170
+again all right so how do we do that
+
+89
+00:03:58,170 --> 00:04:00,030
+well let's start with one does that
+
+90
+00:04:00,030 --> 00:04:01,830
+start with no it's three two so that's
+
+91
+00:04:01,830 --> 00:04:05,760
+not one so let's try to FF no three four
+
+92
+00:04:05,760 --> 00:04:08,580
+five so actually get the idea like I
+
+93
+00:04:08,580 --> 00:04:09,750
+could sit here oh there's one that
+
+94
+00:04:09,750 --> 00:04:11,819
+starts with a zero I could sit here all
+
+95
+00:04:11,819 --> 00:04:15,150
+day typing these numbers and trying to
+
+96
+00:04:15,150 --> 00:04:18,449
+figure out one that actually is going to
+
+97
+00:04:18,449 --> 00:04:20,070
+hash out to something that starts with
+
+98
+00:04:20,070 --> 00:04:22,710
+four zeros going to take a long time so
+
+99
+00:04:22,710 --> 00:04:25,300
+here I have my little mind but
+
+100
+00:04:25,300 --> 00:04:27,220
+I'm sure you've been wondering what
+
+101
+00:04:27,220 --> 00:04:29,229
+happens if I press that so what's going
+
+102
+00:04:29,229 --> 00:04:30,940
+to happen when I press this mine button
+
+103
+00:04:30,940 --> 00:04:33,370
+is it's going to run through all the
+
+104
+00:04:33,370 --> 00:04:36,430
+numbers from 1 all the way up to try to
+
+105
+00:04:36,430 --> 00:04:38,949
+find one where the hash starts with 4
+
+106
+00:04:38,949 --> 00:04:41,080
+zeros in this process is called mine
+
+107
+00:04:41,080 --> 00:04:43,629
+let's do it right now so now it's
+
+108
+00:04:43,629 --> 00:04:47,199
+checking all of the numbers from 1 all
+
+109
+00:04:47,199 --> 00:04:48,909
+the way up look there now it's stopped
+
+110
+00:04:48,909 --> 00:04:54,340
+at 59,000 396 and that one just happens
+
+111
+00:04:54,340 --> 00:04:56,889
+to hash out to something that starts
+
+112
+00:04:56,889 --> 00:04:59,560
+with 4 zeros and it satisfies my little
+
+113
+00:04:59,560 --> 00:05:03,009
+definition of what a signed block is ok
+
+114
+00:05:03,009 --> 00:05:06,550
+so that's that's a block now can you
+
+115
+00:05:06,550 --> 00:05:09,940
+tell me what a block chain is it's
+
+116
+00:05:09,940 --> 00:05:12,430
+probably just a chain of these blocks
+
+117
+00:05:12,430 --> 00:05:14,680
+well how do you how do you put them
+
+118
+00:05:14,680 --> 00:05:17,590
+together let's let's do that all right
+
+119
+00:05:17,590 --> 00:05:19,509
+so here's my block chain I've blocked
+
+120
+00:05:19,509 --> 00:05:21,550
+number one it has some kind of announced
+
+121
+00:05:21,550 --> 00:05:23,770
+just like before there's some data area
+
+122
+00:05:23,770 --> 00:05:26,590
+to it but then it has this previous here
+
+123
+00:05:26,590 --> 00:05:28,509
+it's a bunch of zeros let's let's roll
+
+124
+00:05:28,509 --> 00:05:31,539
+forward so this is block 2 and block 3
+
+125
+00:05:31,539 --> 00:05:34,599
+and for this block chain has 5 blocks on
+
+126
+00:05:34,599 --> 00:05:38,409
+it right the previous here starts with 0
+
+127
+00:05:38,409 --> 00:05:42,909
+0 a e8 right is this number a e8 and
+
+128
+00:05:42,909 --> 00:05:46,770
+then this previous you know B 9 0 is
+
+129
+00:05:46,770 --> 00:05:51,370
+this one over here B 9 0 so you can see
+
+130
+00:05:51,370 --> 00:05:54,610
+that each block points backwards to the
+
+131
+00:05:54,610 --> 00:05:57,129
+one before it and you remember that that
+
+132
+00:05:57,129 --> 00:05:59,889
+first block over here there actually is
+
+133
+00:05:59,889 --> 00:06:01,300
+no previous so it's just a bunch of
+
+134
+00:06:01,300 --> 00:06:03,629
+zeros it's actually just a fake number
+
+135
+00:06:03,629 --> 00:06:09,069
+ok so just like we did before what
+
+136
+00:06:09,069 --> 00:06:11,919
+happens if I change some information
+
+137
+00:06:11,919 --> 00:06:14,830
+here right it's going to change the hash
+
+138
+00:06:14,830 --> 00:06:16,240
+of this block and it's going to
+
+139
+00:06:16,240 --> 00:06:18,039
+invalidate it right well let's try that
+
+140
+00:06:18,039 --> 00:06:20,500
+so I'm going to type PI again sure
+
+141
+00:06:20,500 --> 00:06:23,379
+enough that block is invalid all right
+
+142
+00:06:23,379 --> 00:06:26,020
+just as we assumed but what would happen
+
+143
+00:06:26,020 --> 00:06:28,090
+I'm going to fix that now we'll go back
+
+144
+00:06:28,090 --> 00:06:29,889
+to something that worked what would
+
+145
+00:06:29,889 --> 00:06:32,379
+happen if I change something in this
+
+146
+00:06:32,379 --> 00:06:35,469
+block right it's going to change this
+
+147
+00:06:35,469 --> 00:06:39,070
+hash but this hash gets copied up too
+
+148
+00:06:39,070 --> 00:06:42,010
+this previous so it's going to it's
+
+149
+00:06:42,010 --> 00:06:43,330
+going to change this one too right so it
+
+150
+00:06:43,330 --> 00:06:46,360
+should break both blocks so let me try
+
+151
+00:06:46,360 --> 00:06:48,640
+typing hi in there and sure enough all
+
+152
+00:06:48,640 --> 00:06:52,360
+right so we can go back as far as we
+
+153
+00:06:52,360 --> 00:06:54,790
+want you know to some point in the in
+
+154
+00:06:54,790 --> 00:06:58,780
+the past and break that block and it'll
+
+155
+00:06:58,780 --> 00:07:00,850
+break all the blocks since then
+
+156
+00:07:00,850 --> 00:07:03,460
+everything before is still green but
+
+157
+00:07:03,460 --> 00:07:06,910
+this one is is red it's so if I wanted
+
+158
+00:07:06,910 --> 00:07:11,080
+to you know change something in this
+
+159
+00:07:11,080 --> 00:07:15,190
+this block chain I could just go over to
+
+160
+00:07:15,190 --> 00:07:17,140
+block number five right here we could
+
+161
+00:07:17,140 --> 00:07:19,540
+change it I'll put hi and then we could
+
+162
+00:07:19,540 --> 00:07:21,940
+remind it you know and pick a different
+
+163
+00:07:21,940 --> 00:07:26,380
+knots we'll do that right now and we
+
+164
+00:07:26,380 --> 00:07:29,140
+could essentially alter the chain so
+
+165
+00:07:29,140 --> 00:07:30,970
+we've done it so that we should be good
+
+166
+00:07:30,970 --> 00:07:33,340
+down right alright well what happens if
+
+167
+00:07:33,340 --> 00:07:36,220
+I go back in time to here and I break it
+
+168
+00:07:36,220 --> 00:07:41,920
+here now I have to mine this block which
+
+169
+00:07:41,920 --> 00:07:44,920
+will pick a nonce that makes this block
+
+170
+00:07:44,920 --> 00:07:48,550
+hash out to four zeros if we can find
+
+171
+00:07:48,550 --> 00:07:50,320
+one sometimes it takes a while because
+
+172
+00:07:50,320 --> 00:07:51,580
+it's got to run through a lot of them
+
+173
+00:07:51,580 --> 00:07:53,020
+there it is it found one at a hundred
+
+174
+00:07:53,020 --> 00:07:55,390
+and thirty eight thousand all right but
+
+175
+00:07:55,390 --> 00:07:57,430
+this one is still broken because
+
+176
+00:07:57,430 --> 00:08:00,210
+although this one starts with four zeros
+
+177
+00:08:00,210 --> 00:08:02,980
+adding the four zeros with different
+
+178
+00:08:02,980 --> 00:08:05,740
+stuff up here still makes this block
+
+179
+00:08:05,740 --> 00:08:07,750
+hash out incorrectly so I also have to
+
+180
+00:08:07,750 --> 00:08:11,830
+mine this block all right and that takes
+
+181
+00:08:11,830 --> 00:08:13,060
+some amount of time that one was a
+
+182
+00:08:13,060 --> 00:08:14,800
+little bit quicker and then I have to
+
+183
+00:08:14,800 --> 00:08:18,970
+mine this block to fix it all right so
+
+184
+00:08:18,970 --> 00:08:22,900
+what we're showing here is that if I go
+
+185
+00:08:22,900 --> 00:08:25,840
+and change this last block all I have to
+
+186
+00:08:25,840 --> 00:08:29,530
+do is remind this block if I go way back
+
+187
+00:08:29,530 --> 00:08:32,380
+in time to back here and I make a change
+
+188
+00:08:32,380 --> 00:08:35,979
+like that I'm going to have to mine this
+
+189
+00:08:35,979 --> 00:08:38,380
+one this one this one and this one so
+
+190
+00:08:38,380 --> 00:08:41,590
+the more blocks that go by the more
+
+191
+00:08:41,590 --> 00:08:44,470
+blocks in the past that we are the
+
+192
+00:08:44,470 --> 00:08:46,810
+harder and harder and harder it is to
+
+193
+00:08:46,810 --> 00:08:50,470
+make a change and so that's how a block
+
+194
+00:08:50,470 --> 00:08:52,370
+chain is going to resist
+
+195
+00:08:52,370 --> 00:08:59,689
+mutation resist change okay so now you
+
+196
+00:08:59,689 --> 00:09:02,899
+like like you know I did if I if if I do
+
+197
+00:09:02,899 --> 00:09:06,800
+this in this block here you can see that
+
+198
+00:09:06,800 --> 00:09:09,920
+I've changed it to hi and a remind at
+
+199
+00:09:09,920 --> 00:09:13,430
+blah blah blah how would I know that my
+
+200
+00:09:13,430 --> 00:09:17,089
+block chain has been remind alright
+
+201
+00:09:17,089 --> 00:09:18,379
+let's take a look at that I'm going to
+
+202
+00:09:18,379 --> 00:09:21,860
+hit this little distributed thing so now
+
+203
+00:09:21,860 --> 00:09:23,720
+we have a just distributed block chain
+
+204
+00:09:23,720 --> 00:09:26,870
+it looks exactly like the last block
+
+205
+00:09:26,870 --> 00:09:28,970
+chain okay up to five the but this is
+
+206
+00:09:28,970 --> 00:09:31,879
+pure a the first peer if we go down here
+
+207
+00:09:31,879 --> 00:09:35,540
+you can see here's P or B and it happens
+
+208
+00:09:35,540 --> 00:09:38,420
+to have an exact copy of the blockchain
+
+209
+00:09:38,420 --> 00:09:40,550
+there's actually also a P or C down here
+
+210
+00:09:40,550 --> 00:09:41,629
+right and this could go on forever
+
+211
+00:09:41,629 --> 00:09:44,209
+there's many many peers out on the
+
+212
+00:09:44,209 --> 00:09:45,800
+internet and they all have a complete
+
+213
+00:09:45,800 --> 00:09:49,519
+copy of the blockchain so in this case
+
+214
+00:09:49,519 --> 00:09:53,569
+if I look at this hash it's 0 e for be
+
+215
+00:09:53,569 --> 00:09:57,019
+alright if I go down to this one I
+
+216
+00:09:57,019 --> 00:10:01,069
+notice it also has a for B if I go down
+
+217
+00:10:01,069 --> 00:10:03,259
+to this last one it has a for B so they
+
+218
+00:10:03,259 --> 00:10:05,240
+must be identical and I'm going to
+
+219
+00:10:05,240 --> 00:10:07,339
+demonstrate that by going here
+
+220
+00:10:07,339 --> 00:10:09,949
+and typing something I'll type hi again
+
+221
+00:10:09,949 --> 00:10:14,600
+and then I will remind this block I've
+
+222
+00:10:14,600 --> 00:10:16,220
+got some other number now let's put some
+
+223
+00:10:16,220 --> 00:10:20,480
+other number up here so I should be able
+
+224
+00:10:20,480 --> 00:10:24,769
+to mine this block okay now all the
+
+225
+00:10:24,769 --> 00:10:26,959
+chains are green right they're all green
+
+226
+00:10:26,959 --> 00:10:32,089
+however this chain says the last hash is
+
+227
+00:10:32,089 --> 00:10:35,959
+efore B the bottom one says that to e
+
+228
+00:10:35,959 --> 00:10:38,899
+for B and this middle one here says for
+
+229
+00:10:38,899 --> 00:10:42,980
+CAE so I know just by glancing at this
+
+230
+00:10:42,980 --> 00:10:45,920
+one little hash that something is wrong
+
+231
+00:10:45,920 --> 00:10:48,740
+in this block chain even though all of
+
+232
+00:10:48,740 --> 00:10:51,379
+the hashes start with four zeros I know
+
+233
+00:10:51,379 --> 00:10:53,600
+that this one is different and it's
+
+234
+00:10:53,600 --> 00:10:56,240
+different because I have two it's
+
+235
+00:10:56,240 --> 00:10:57,889
+essentially two against one we're a
+
+236
+00:10:57,889 --> 00:11:00,019
+little democracy here right this guy
+
+237
+00:11:00,019 --> 00:11:02,959
+argues that it's efore be this guy
+
+238
+00:11:02,959 --> 00:11:05,540
+argues that it's four ce4
+
+239
+00:11:05,540 --> 00:11:08,509
+CA and this one is e for B so e for B
+
+240
+00:11:08,509 --> 00:11:12,320
+wins so that's how a completely
+
+241
+00:11:12,320 --> 00:11:16,130
+distributed copy having a copy on many
+
+242
+00:11:16,130 --> 00:11:18,920
+different computers they can all very
+
+243
+00:11:18,920 --> 00:11:21,500
+quickly see if all of the blocks are
+
+244
+00:11:21,500 --> 00:11:23,240
+identical and remember block chains can
+
+245
+00:11:23,240 --> 00:11:24,980
+have you know four or five hundred
+
+246
+00:11:24,980 --> 00:11:28,100
+thousand blocks very easily so rather
+
+247
+00:11:28,100 --> 00:11:29,779
+than checking through all of them all
+
+248
+00:11:29,779 --> 00:11:31,339
+you really have to do is look at the
+
+249
+00:11:31,339 --> 00:11:34,370
+hash of the most recent one and you can
+
+250
+00:11:34,370 --> 00:11:37,009
+see that if anything in the past
+
+251
+00:11:37,009 --> 00:11:40,850
+anything way back here was altered you
+
+252
+00:11:40,850 --> 00:11:44,480
+can tell by looking at this at the last
+
+253
+00:11:44,480 --> 00:11:48,380
+block in this in the chain you know it's
+
+254
+00:11:48,380 --> 00:11:49,490
+going to hash out to something that
+
+255
+00:11:49,490 --> 00:11:52,130
+doesn't start with four zeros and looks
+
+256
+00:11:52,130 --> 00:11:54,860
+very different from what the hash is on
+
+257
+00:11:54,860 --> 00:11:57,889
+the the good chains are okay so that's a
+
+258
+00:11:57,889 --> 00:11:59,839
+block chain that's the entire thing
+
+259
+00:11:59,839 --> 00:12:03,589
+there is no more to it than that but
+
+260
+00:12:03,589 --> 00:12:06,860
+it's kind of not really useful because
+
+261
+00:12:06,860 --> 00:12:10,069
+we don't have some something in this
+
+262
+00:12:10,069 --> 00:12:12,380
+data area that means anything I keep
+
+263
+00:12:12,380 --> 00:12:14,480
+typing my name or hi and it's kind of
+
+264
+00:12:14,480 --> 00:12:16,970
+that's sort of irrelevant information so
+
+265
+00:12:16,970 --> 00:12:20,180
+what we really want is a token so let's
+
+266
+00:12:20,180 --> 00:12:22,760
+do a token on our blockchain all right
+
+267
+00:12:22,760 --> 00:12:24,110
+now look at this so I have this token
+
+268
+00:12:24,110 --> 00:12:26,449
+just totally arbitrarily I'm calling
+
+269
+00:12:26,449 --> 00:12:29,089
+these I guess dollars right so we have
+
+270
+00:12:29,089 --> 00:12:33,230
+25 dollars from Darcy to Bingley four
+
+271
+00:12:33,230 --> 00:12:35,480
+dollars and twenty seven cents go from
+
+272
+00:12:35,480 --> 00:12:37,579
+Elizabeth to Jane you get the idea it's
+
+273
+00:12:37,579 --> 00:12:39,920
+basically there's all these transactions
+
+274
+00:12:39,920 --> 00:12:41,660
+that are happening and I've just
+
+275
+00:12:41,660 --> 00:12:42,920
+replaced the data with these
+
+276
+00:12:42,920 --> 00:12:45,800
+transactions and just like we saw before
+
+277
+00:12:45,800 --> 00:12:48,230
+you know so there's multiple blocks here
+
+278
+00:12:48,230 --> 00:12:49,819
+this one has more transit it doesn't
+
+279
+00:12:49,819 --> 00:12:51,439
+matter how many transactions there are
+
+280
+00:12:51,439 --> 00:12:53,750
+there can be many or they can be few or
+
+281
+00:12:53,750 --> 00:12:56,899
+none if we keep going forward in here
+
+282
+00:12:56,899 --> 00:12:59,930
+just like we saw before if we go down
+
+283
+00:12:59,930 --> 00:13:01,759
+and we notice we have all these other
+
+284
+00:13:01,759 --> 00:13:05,630
+copies of the same blockchain right so
+
+285
+00:13:05,630 --> 00:13:07,509
+now here's where the immutability is
+
+286
+00:13:07,509 --> 00:13:10,730
+important if I change something back
+
+287
+00:13:10,730 --> 00:13:13,730
+here you'll notice that this is you know
+
+288
+00:13:13,730 --> 00:13:16,550
+a 7fc blah blah blah it's something it's
+
+289
+00:13:16,550 --> 00:13:17,930
+something else
+
+290
+00:13:17,930 --> 00:13:20,180
+so it's something different than what's
+
+291
+00:13:20,180 --> 00:13:22,340
+down here so in in this way I mean it's
+
+292
+00:13:22,340 --> 00:13:24,980
+very important that if I were to go back
+
+293
+00:13:24,980 --> 00:13:30,440
+in time and change some value that we
+
+294
+00:13:30,440 --> 00:13:33,440
+would notice it's it's very important
+
+295
+00:13:33,440 --> 00:13:36,590
+with money that you don't lose track and
+
+296
+00:13:36,590 --> 00:13:38,300
+that's the whole point of using a
+
+297
+00:13:38,300 --> 00:13:40,330
+blockchain here this is a whole point of
+
+298
+00:13:40,330 --> 00:13:44,180
+resisting any kind of modifications you
+
+299
+00:13:44,180 --> 00:13:45,980
+know of things that have happened in the
+
+300
+00:13:45,980 --> 00:13:49,910
+past so that's the that's the reasoning
+
+301
+00:13:49,910 --> 00:13:53,180
+behind having using a blockchain to
+
+302
+00:13:53,180 --> 00:13:57,080
+remember tokens now one thing I would
+
+303
+00:13:57,080 --> 00:14:01,730
+mention here is that we're not listing
+
+304
+00:14:01,730 --> 00:14:06,800
+you know Darcy has $100 and he's giving
+
+305
+00:14:06,800 --> 00:14:09,230
+25 of it to Bingley the only thing we're
+
+306
+00:14:09,230 --> 00:14:10,400
+saying is Darcy
+
+307
+00:14:10,400 --> 00:14:12,800
+gives 25 to Bingley we're not
+
+308
+00:14:12,800 --> 00:14:15,020
+remembering a bank account balance we're
+
+309
+00:14:15,020 --> 00:14:20,210
+only remembering money movements so this
+
+310
+00:14:20,210 --> 00:14:23,930
+begs the question does Darcy have 25
+
+311
+00:14:23,930 --> 00:14:26,270
+dollars well we have a problem here in
+
+312
+00:14:26,270 --> 00:14:29,240
+this version of the blockchain we don't
+
+313
+00:14:29,240 --> 00:14:32,480
+actually know if Darcy has 25 dollars so
+
+314
+00:14:32,480 --> 00:14:36,530
+let's look at a coinbase transaction so
+
+315
+00:14:36,530 --> 00:14:38,930
+if we look back here a coin base we're
+
+316
+00:14:38,930 --> 00:14:41,240
+going to add a coinbase transaction to
+
+317
+00:14:41,240 --> 00:14:43,190
+our blocks and this is this is very
+
+318
+00:14:43,190 --> 00:14:45,170
+similar to what we've seen before but
+
+319
+00:14:45,170 --> 00:14:47,030
+we've just adding a coin base at the top
+
+320
+00:14:47,030 --> 00:14:48,410
+and what's that that what that's saying
+
+321
+00:14:48,410 --> 00:14:50,840
+is we're going to invent a hundred
+
+322
+00:14:50,840 --> 00:14:52,520
+dollars out of thin air and give it to
+
+323
+00:14:52,520 --> 00:14:55,220
+anders and there's no transactions in
+
+324
+00:14:55,220 --> 00:14:57,380
+this block because nobody had any money
+
+325
+00:14:57,380 --> 00:15:00,190
+previous to this in the next block
+
+326
+00:15:00,190 --> 00:15:02,480
+another hundred dollars comes out of
+
+327
+00:15:02,480 --> 00:15:03,980
+nowhere and goes to honors i'm a fan i
+
+328
+00:15:03,980 --> 00:15:06,500
+love it right i'll take 100 bucks now we
+
+329
+00:15:06,500 --> 00:15:08,450
+have some transactions you can see that
+
+330
+00:15:08,450 --> 00:15:10,070
+they're all from onder's they're all for
+
+331
+00:15:10,070 --> 00:15:12,320
+me because i'm the only one who has any
+
+332
+00:15:12,320 --> 00:15:15,770
+money at this point so i'm sending ten
+
+333
+00:15:15,770 --> 00:15:18,410
+of my dollars to Sophie do I have ten
+
+334
+00:15:18,410 --> 00:15:20,780
+dollars yeah I do I look back and I see
+
+335
+00:15:20,780 --> 00:15:23,000
+that this coinbase transaction has given
+
+336
+00:15:23,000 --> 00:15:25,250
+me a hundred so I have at least ten and
+
+337
+00:15:25,250 --> 00:15:27,140
+I can send it on and you add all these
+
+338
+00:15:27,140 --> 00:15:28,850
+up and they don't go over a hundred and
+
+339
+00:15:28,850 --> 00:15:31,680
+it follows sort of a basic rule
+
+340
+00:15:31,680 --> 00:15:34,950
+of a currency like you can't invent it
+
+341
+00:15:34,950 --> 00:15:36,810
+out of thin air you can't create money
+
+342
+00:15:36,810 --> 00:15:40,649
+out of thin air you it's it's dispersion
+
+343
+00:15:40,649 --> 00:15:44,100
+is controlled so now if we look at this
+
+344
+00:15:44,100 --> 00:15:47,430
+blockchain that we've created and we zip
+
+345
+00:15:47,430 --> 00:15:50,490
+forward in time and we notice that we
+
+346
+00:15:50,490 --> 00:15:53,850
+see that Jackson is giving Alexa two
+
+347
+00:15:53,850 --> 00:15:56,520
+dollars and so does Jackson actually
+
+348
+00:15:56,520 --> 00:15:59,339
+have two dollars to give Alexa well we
+
+349
+00:15:59,339 --> 00:16:01,110
+go back a block before and we see that
+
+350
+00:16:01,110 --> 00:16:02,730
+Emily who had gotten ten dollars from
+
+351
+00:16:02,730 --> 00:16:07,560
+onder's gave ten to Jackson and so
+
+352
+00:16:07,560 --> 00:16:09,779
+Jackson does have the money so we can
+
+353
+00:16:09,779 --> 00:16:12,839
+just go backwards and and find that out
+
+354
+00:16:12,839 --> 00:16:15,300
+that's actually one of the benefits of
+
+355
+00:16:15,300 --> 00:16:18,240
+having a previous here it's easy to go
+
+356
+00:16:18,240 --> 00:16:20,250
+backwards we we just look for the block
+
+357
+00:16:20,250 --> 00:16:22,410
+that looks like that that has that hash
+
+358
+00:16:22,410 --> 00:16:24,420
+and here it is right here right so you
+
+359
+00:16:24,420 --> 00:16:26,490
+points two blocks back in time and
+
+360
+00:16:26,490 --> 00:16:29,250
+allows us to trace the provenance of any
+
+361
+00:16:29,250 --> 00:16:32,060
+coin that we want so that's a basic
+
+362
+00:16:32,060 --> 00:16:35,010
+blockchain and we're running a currency
+
+363
+00:16:35,010 --> 00:16:37,470
+on top of it and as you know block
+
+364
+00:16:37,470 --> 00:16:39,990
+chains are there many copies everybody
+
+365
+00:16:39,990 --> 00:16:43,470
+has a copy of it so if we mutate you
+
+366
+00:16:43,470 --> 00:16:45,420
+know this and make it six dollars these
+
+367
+00:16:45,420 --> 00:16:47,850
+go invalid it does not agree with with
+
+368
+00:16:47,850 --> 00:16:50,880
+these block chains down here these
+
+369
+00:16:50,880 --> 00:16:53,100
+copies of the same blockchain down here
+
+370
+00:16:53,100 --> 00:16:56,640
+so this resists tampering which is what
+
+371
+00:16:56,640 --> 00:17:00,029
+you want for a currency it works very
+
+372
+00:17:00,029 --> 00:17:02,330
+well for things that are small and
+
+373
+00:17:02,330 --> 00:17:05,939
+transactional like like this go ahead
+
+374
+00:17:05,939 --> 00:17:10,920
+and fix that and there they're of just a
+
+375
+00:17:10,920 --> 00:17:14,939
+very efficient way to handle agreement
+
+376
+00:17:14,939 --> 00:17:18,270
+on what has happened in the past it's
+
+377
+00:17:18,270 --> 00:17:20,939
+kind of this immutable history that that
+
+378
+00:17:20,939 --> 00:17:25,110
+goes goes down with time so that's a
+
+379
+00:17:25,110 --> 00:17:27,600
+basic blockchain and a token on it there
+
+380
+00:17:27,600 --> 00:17:30,380
+we're glossing over some main points but
+
+381
+00:17:30,380 --> 00:17:35,460
+if you dig into the demo and and click
+
+382
+00:17:35,460 --> 00:17:37,559
+through these things and play around
+
+383
+00:17:37,559 --> 00:17:38,940
+with it you'd get a better and better
+
+384
+00:17:38,940 --> 00:17:41,850
+idea of how this works there will be a
+
+385
+00:17:41,850 --> 00:17:44,100
+part two where we go into a little bit
+
+386
+00:17:44,100 --> 00:17:44,380
+more
+
+387
+00:17:44,380 --> 00:17:47,049
+detail about how the transactions are
+
+388
+00:17:47,049 --> 00:17:50,000
+created till then

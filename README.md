@@ -42,9 +42,9 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [small blockchain](https:https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b) -small blockchain using python
 ## Build Tools
 
-*Content Management Systems.*
+*views about blockchain*
 
-* [django-cms](https://www.django-cms.org/en/) - An Open source enterprise CMS based on the Django.
+* [hbs blockchain](https://hbr.org/2017/01/the-truth-about-blockchain) - The Truth About Blockchain.
 * [djedi-cms](http://djedi-cms.org/) - A lightweight but yet powerful Django CMS with plugins, inline editing and performance in mind.
 * [FeinCMS](http://www.feincms.org/) - One of the most advanced Content Management Systems built on Django.
 * [Kotti](http://kotti.pylonsproject.org/) - A high-level, Pythonic web application framework built on Pyramid.

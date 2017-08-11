@@ -39,18 +39,8 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [blockchain demo](https://www.youtube.com/watch?v=_160oMzblY8) -Blockchain 101 - A Visual Demo
 * [how to learn](https://news.ycombinator.com/item?id=12571287) -The advices from hacker news
 
-
+* [small blockchain](https:https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b) -small blockchain using python
 ## Build Tools
-
-*Compile software from source code.*
-
-* [BitBake](http://www.yoctoproject.org/docs/1.6/bitbake-user-manual/bitbake-user-manual.html) - A make-like build tool for embedded Linux.
-* [buildout](http://www.buildout.org/en/latest/) - A build system for creating, assembling and deploying applications from multiple parts.
-* [PlatformIO](https://github.com/platformio/platformio-core) - A console tool to build code with different development platforms.
-* [PyBuilder](https://github.com/pybuilder/pybuilder) - A continuous build tool written in pure Python.
-* [SCons](http://www.scons.org/) - A software construction tool.
-
-## CMS
 
 *Content Management Systems.*
 

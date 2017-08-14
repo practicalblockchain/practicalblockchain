@@ -40,12 +40,12 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [how to learn](https://news.ycombinator.com/item?id=12571287) -The advices from hacker news
 
 * [small blockchain](https:https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b) -small blockchain using python
-## Build Tools
+## Views
 
 *views about blockchain*
 
 * [hbs blockchain](https://hbr.org/2017/01/the-truth-about-blockchain) - The Truth About Blockchain.
-* [djedi-cms](http://djedi-cms.org/) - A lightweight but yet powerful Django CMS with plugins, inline editing and performance in mind.
+* [about mining](https://medium.com/zapchain-magazine/what-most-bitcoin-miners-dont-understand-39e18e9b981f) - Why the Little Guy Can’t Mine Bitcoin Anymore
 * [FeinCMS](http://www.feincms.org/) - One of the most advanced Content Management Systems built on Django.
 * [Kotti](http://kotti.pylonsproject.org/) - A high-level, Pythonic web application framework built on Pyramid.
 * [Mezzanine](http://mezzanine.jupo.org/) - A powerful, consistent, and flexible content management platform.

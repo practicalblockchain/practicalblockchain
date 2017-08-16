@@ -38,8 +38,9 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [Why should u care them](https://hackernoon.com/bitcoin-ethereum-blockchain-tokens-icos-why-should-anyone-care-890b868cec06) -Get start about these concepts
 * [blockchain demo](https://www.youtube.com/watch?v=_160oMzblY8) -Blockchain 101 - A Visual Demo
 * [how to learn](https://news.ycombinator.com/item?id=12571287) -The advices from hacker news
-
+* [understand crypto](http://studyraspberrypi.blogspot.com/2016/01/encrypt-decrypt-string-with-rsa-public_18.html) -Understand crypt using public and private key
 * [small blockchain](https:https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b) -small blockchain using python
+
 ## Views
 
 *views about blockchain*
@@ -55,9 +56,9 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [Wagtail](https://wagtail.io/) - A Django content management system.
 * [Widgy](https://wid.gy/) - Last CMS framework, based on Django.
 
-## Caching
+## Development
 
-*Libraries for caching data.*
+*develop your cryptocurrency*
 
 * [Beaker](https://github.com/bbangert/beaker) - A library for caching and sessions for use with web applications and stand-alone Python scripts and applications.
 * [DiskCache](http://www.grantjenks.com/docs/diskcache/) - SQLite and file backed cache backend with faster lookups than memcached and redis.

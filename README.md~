@@ -38,24 +38,15 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [Why should u care them](https://hackernoon.com/bitcoin-ethereum-blockchain-tokens-icos-why-should-anyone-care-890b868cec06) -Get start about these concepts
 * [blockchain demo](https://www.youtube.com/watch?v=_160oMzblY8) -Blockchain 101 - A Visual Demo
 * [how to learn](https://news.ycombinator.com/item?id=12571287) -The advices from hacker news
+* [understand crypto](http://studyraspberrypi.blogspot.com/2016/01/encrypt-decrypt-string-with-rsa-public_18.html) -Understand crypt using public and private key
+* [small blockchain](https:https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b) -small blockchain using python
 
+## Views
 
-## Build Tools
+*views about blockchain*
 
-*Compile software from source code.*
-
-* [BitBake](http://www.yoctoproject.org/docs/1.6/bitbake-user-manual/bitbake-user-manual.html) - A make-like build tool for embedded Linux.
-* [buildout](http://www.buildout.org/en/latest/) - A build system for creating, assembling and deploying applications from multiple parts.
-* [PlatformIO](https://github.com/platformio/platformio-core) - A console tool to build code with different development platforms.
-* [PyBuilder](https://github.com/pybuilder/pybuilder) - A continuous build tool written in pure Python.
-* [SCons](http://www.scons.org/) - A software construction tool.
-
-## CMS
-
-*Content Management Systems.*
-
-* [django-cms](https://www.django-cms.org/en/) - An Open source enterprise CMS based on the Django.
-* [djedi-cms](http://djedi-cms.org/) - A lightweight but yet powerful Django CMS with plugins, inline editing and performance in mind.
+* [hbs blockchain](https://hbr.org/2017/01/the-truth-about-blockchain) - The Truth About Blockchain.
+* [about mining](https://medium.com/zapchain-magazine/what-most-bitcoin-miners-dont-understand-39e18e9b981f) - Why the Little Guy Can’t Mine Bitcoin Anymore
 * [FeinCMS](http://www.feincms.org/) - One of the most advanced Content Management Systems built on Django.
 * [Kotti](http://kotti.pylonsproject.org/) - A high-level, Pythonic web application framework built on Pyramid.
 * [Mezzanine](http://mezzanine.jupo.org/) - A powerful, consistent, and flexible content management platform.
@@ -65,9 +56,9 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [Wagtail](https://wagtail.io/) - A Django content management system.
 * [Widgy](https://wid.gy/) - Last CMS framework, based on Django.
 
-## Caching
+## Development
 
-*Libraries for caching data.*
+*develop your cryptocurrency*
 
 * [Beaker](https://github.com/bbangert/beaker) - A library for caching and sessions for use with web applications and stand-alone Python scripts and applications.
 * [DiskCache](http://www.grantjenks.com/docs/diskcache/) - SQLite and file backed cache backend with faster lookups than memcached and redis.
